@@ -3,25 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+ --cs-base-100: '#fef8d9'; /* background */
+ --cs-primary: '#233429';
+ --cs-secondary: '#5e9737';
+ --cs-accent: '##a1c13a';
+ --cs-neutral: '#b0ab8a';
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
